@@ -7,8 +7,7 @@ arbol.agregar(4)
 arbol.agregar(5)
 arbol.agregar(6)
 arbol.agregar(7)
-entrada = int(input("Ingresa algo para agregar al árbol: "))
-arbol.agregar(entrada)
+arbol.agregar(8)
 
 # Búsqueda
 busqueda = int(input("Busca algo en el árbol: "))
