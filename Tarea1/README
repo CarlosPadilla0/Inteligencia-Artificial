@@ -1,0 +1,17 @@
+Árbol Binario en Python
+
+Descripción
+Implementación básica de un árbol binario en Python con inserción y búsqueda de elementos. 
+Contiene métodos para agregar nodos (agregar), buscar valores (buscar).
+
+
+Uso
+from arbol_binario import arbolBinario
+
+arbol = arbolBinario(10)
+arbol.agregar(5)
+arbol.agregar(15)
+
+nodo = arbol.buscar(arbol.raiz, 7)
+print("Encontrado:" if nodo else "No encontrado")
+
