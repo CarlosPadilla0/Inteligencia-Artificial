@@ -31,3 +31,9 @@ class arbolBinario:
             return self.buscar(nodo.izq, dato)
         else:
             return self.buscar(nodo.der, dato)
+
+    def mostrar(self, nodo):
+        if nodo is not None:
+            self.mostrar(nodo.izq)
+            print(nodo.valor)
+            self.mostrar(nodo.der)

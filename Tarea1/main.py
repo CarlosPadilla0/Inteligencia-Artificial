@@ -16,3 +16,9 @@ if nodo is None:
     print(f"{busqueda} no existe")
 else:
     print(f"{busqueda} sí existe")
+
+mostrar = input("¿Desea mostrar el árbol? (s/n): ")
+if mostrar == "s":
+    arbol.mostrar(arbol.raiz)
+else:
+    print("¡Hasta luego!")
