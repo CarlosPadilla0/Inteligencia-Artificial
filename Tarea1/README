@@ -2,7 +2,7 @@
 
 Descripción
 Implementación básica de un árbol binario en Python con inserción y búsqueda de elementos. 
-Contiene métodos para agregar nodos (agregar), buscar valores (buscar).
+Contiene métodos para agregar nodos (agregar), buscar valores (buscar) y mostrar el árbol (mostrar).
 
 
 Uso
@@ -14,4 +14,7 @@ arbol.agregar(15)
 
 nodo = arbol.buscar(arbol.raiz, 7)
 print("Encontrado:" if nodo else "No encontrado")
+
+arbol.mostrar(arbol.raiz)   # Mostrar el árbol
+
 
