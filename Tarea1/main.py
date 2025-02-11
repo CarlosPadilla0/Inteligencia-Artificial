@@ -22,3 +22,4 @@ if mostrar == "s":
     arbol.mostrar(arbol.raiz)
 else:
     print("¡Hasta luego!")
+    
