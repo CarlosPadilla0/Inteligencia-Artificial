@@ -1,20 +1,59 @@
-Árbol Binario en Python
+# Árbol Binario en Python
 
-Descripción
-Implementación básica de un árbol binario en Python con inserción y búsqueda de elementos. 
-Contiene métodos para agregar nodos (agregar), buscar valores (buscar) y mostrar el árbol (mostrar).
+## Descripción
+Este proyecto implementa un árbol binario básico en Python, con funcionalidades para la inserción y búsqueda de elementos. También incluye métodos para agregar nodos (`agregar`), buscar valores (`buscar`) y mostrar el árbol (`mostrar`).
 
+## Estructura del Proyecto
+- `arbolBinario.py`: Contiene la clase `arbolBinario` con los métodos para manejar el árbol.
+- `nodo.py`: Define la clase `nodo`, que representa cada nodo del árbol.
+- `main.py`: Script principal para interactuar con el árbol binario.
 
-Uso
-from arbol_binario import arbolBinario
+## Uso
+Para utilizar este proyecto, sigue los siguientes pasos:
 
+1. Importa la clase `arbolBinario` desde el módulo `arbolBinario`:
+    ```python
+    from arbolBinario import arbolBinario
+    ```
+
+2. Crea una instancia del árbol binario e inserta algunos valores:
+    ```python
+    arbol = arbolBinario(10)
+    arbol.agregar(5)
+    arbol.agregar(15)
+    ```
+
+3. Busca un valor en el árbol:
+    ```python
+    nodo = arbol.buscar(arbol.raiz, 7)
+    print("Encontrado:" if nodo else "No encontrado")
+    ```
+
+4. Muestra el árbol:
+    ```python
+    arbol.mostrar(arbol.raiz)  # Mostrar el árbol
+    ```
+
+## Ejemplo de Uso
+Aquí tienes un ejemplo completo de cómo utilizar el árbol binario:
+
+```python
+from arbolBinario import arbolBinario
+
+# Crear el árbol binario con el valor inicial 10
 arbol = arbolBinario(10)
+
+# Agregar valores al árbol
 arbol.agregar(5)
 arbol.agregar(15)
+arbol.agregar(3)
+arbol.agregar(7)
+arbol.agregar(12)
+arbol.agregar(18)
 
+# Buscar un valor en el árbol
 nodo = arbol.buscar(arbol.raiz, 7)
 print("Encontrado:" if nodo else "No encontrado")
 
-arbol.mostrar(arbol.raiz)   # Mostrar el árbol
-
-
+# Mostrar el árbol
+arbol.mostrar(arbol.raiz)
