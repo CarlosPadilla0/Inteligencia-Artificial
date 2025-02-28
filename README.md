@@ -31,7 +31,7 @@ Este repositorio contiene tareas y proyectos relacionados con la inteligencia ar
 - `Tarea 4/` : Agentes Deliberativos.
    - `Agentes deliberativos` : Resumen sobre la investigación previamente hecha acerca de agentes deliberativos.
    - `Agentes-Deliverativos.pptx` : Presentacion sobre la informacion obtenida de agentes deliberativos.
-   - `README` : Descripcion de los documentos y su contenido.
+   - `README.md` : Descripcion de los documentos y su contenido.
 
 ## Uso
 
