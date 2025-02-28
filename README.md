@@ -28,6 +28,11 @@ Este repositorio contiene tareas y proyectos relacionados con la inteligencia ar
   - `Tarea 3 Sistemas De Recomendacion.pptx`: Presentación en PowerPoint sobre sistemas de recomendación.
   - `README.md`: Descripción de los documentos y su contenido.
 
+- 'Tarea 4/' : Agentes Deliberativos.
+   - 'Agentes deliberativos : Resumen sobre la investigación previamente hecha acerca de agentes deliberativos.
+   - 'Agentes-Deliverativos.pptx' : Presentacion sobre la informacion obtenida de agentes deliberativos.
+   - 'README' : Descripcion de los documentos y su contenido.
+
 ## Uso
 
 Para utilizar los proyectos y documentos de este repositorio, navega a la carpeta correspondiente y sigue las instrucciones proporcionadas en los archivos README de cada tarea.
