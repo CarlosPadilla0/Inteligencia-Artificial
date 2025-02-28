@@ -77,6 +77,7 @@ class Node:
         way.append(start)
         way.reverse()
         return way
+        
 
 class PuzzleGUI:
     def __init__(self, root, solution_path, result_depth):
