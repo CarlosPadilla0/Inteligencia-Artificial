@@ -11,21 +11,34 @@ Este repositorio contiene tareas y proyectos relacionados con la inteligencia ar
 
 ## Estructura del Repositorio
 
-- `Tarea1/`: Implementación de un árbol binario en Python.
+- `Unidad 1/Proyecto 1_Puzzle 8/`: Implementación del juego Puzzle 8.
+  - `Proyecto.py`: Código fuente del juego Puzzle 8.
+  - `README.md`: Descripción y guía de uso del proyecto Puzzle 8.
+
+- `Unidad 1/Tarea1/`: Implementación de un árbol binario en Python.
   - `arbolBinario.py`: Contiene la clase `arbolBinario` con los métodos para manejar el árbol.
   - `nodo.py`: Define la clase `nodo`, que representa cada nodo del árbol.
   - `main.py`: Script principal para interactuar con el árbol binario.
   - `Pruebas-Tarea1.docx`: Documento con pruebas y resultados de la implementación.
   - `README`: Descripción y guía de uso del proyecto de árbol binario.
 
-- `Tarea2/`: Documentos relacionados con la inteligencia artificial.
+- `Unidad 1/Tarea2/`: Documentos relacionados con la inteligencia artificial.
   - `Present IA.pdf`: Presentación en PDF sobre inteligencia artificial.
   - `Resumen.pdf`: Resumen en PDF de los temas tratados en la presentación.
   - `README.Md`: Descripción de los documentos y su contenido.
 
-- `Tarea 3/`: Documentos relacionados con sistemas de recomendación.
+- `Unidad 1/Tarea 3/`: Documentos relacionados con sistemas de recomendación.
   - `Sistemas de Recomendacion.docx`: Documento con la descripción y análisis de diferentes sistemas de recomendación.
   - `Tarea 3 Sistemas De Recomendacion.pptx`: Presentación en PowerPoint sobre sistemas de recomendación.
+  - `README.md`: Descripción de los documentos y su contenido.
+
+- `Unidad 1/Tarea 4/`: Documentos relacionados con agentes deliberativos.
+  - `Agentes deliberativos.pdf`: Documento en PDF sobre agentes deliberativos.
+  - `Agentes-Deliberativos.pptx`: Presentación en PowerPoint sobre agentes deliberativos.
+
+- `Unidad 2/Tarea 1/`: Documentos relacionados con paradigmas de la inteligencia artificial.
+  - `Paradigmas de la inteligencia artificial.docx`: Documento en Word sobre paradigmas de la inteligencia artificial.
+  - `Proceso de Aprendizaje Automático y Modelo Cognitivo.pdf`: Documento en PDF sobre el proceso de aprendizaje automático y modelo cognitivo.
   - `README.md`: Descripción de los documentos y su contenido.
 
 ## Uso
