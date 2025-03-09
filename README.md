@@ -32,7 +32,6 @@ Este repositorio contiene tareas y proyectos relacionados con la inteligencia ar
   - `Tarea 3 Sistemas De Recomendacion.pptx`: Presentación en PowerPoint sobre sistemas de recomendación.
   - `README.md`: Descripción de los documentos y su contenido.
 
-<<<<<<< HEAD
 - `Unidad 1/Tarea 4/`: Documentos relacionados con agentes deliberativos.
   - `Agentes deliberativos.pdf`: Documento en PDF sobre agentes deliberativos.
   - `Agentes-Deliberativos.pptx`: Presentación en PowerPoint sobre agentes deliberativos.
@@ -41,11 +40,7 @@ Este repositorio contiene tareas y proyectos relacionados con la inteligencia ar
   - `Paradigmas de la inteligencia artificial.docx`: Documento en Word sobre paradigmas de la inteligencia artificial.
   - `Proceso de Aprendizaje Automático y Modelo Cognitivo.pdf`: Documento en PDF sobre el proceso de aprendizaje automático y modelo cognitivo.
   - `README.md`: Descripción de los documentos y su contenido.
-=======
-- `Tarea 4/` : Agentes Deliberativos.
-   - `Agentes deliberativos` : Resumen sobre la investigación previamente hecha acerca de agentes deliberativos.
-   - `Agentes-Deliverativos.pptx` : Presentacion sobre la informacion obtenida de agentes deliberativos.
-   - `README.md` : Descripcion de los documentos y su contenido.
+
 
 ## Uso
 
