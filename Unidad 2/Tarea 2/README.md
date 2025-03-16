@@ -9,7 +9,7 @@ Una **red semántica** es una estructura de representación del conocimiento que
 Despues de una breve introducción del negocio utilizado se muestran la clasificacion de la informacion, y por ultimo la representacion visual de la Red Semantica.
 
 ## Autor
--Diana Leticia Alvarez Moreno
+-Diana Leticia Alvarez Moreno.
 -Carlos Eduardo Padilla Pimentel
 
 
