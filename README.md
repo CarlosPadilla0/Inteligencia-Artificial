@@ -41,6 +41,11 @@ Este repositorio contiene tareas y proyectos relacionados con la inteligencia ar
   - `Proceso de Aprendizaje Automático y Modelo Cognitivo.pdf`: Documento en PDF sobre el proceso de aprendizaje automático y modelo cognitivo.
   - `README.md`: Descripción de los documentos y su contenido.
 
+- `Unidad 2/Tarea 2/`: Documento relacionado con la representacion visual de la red semantica.
+  - `Red semantica(visual).pdf`: Documento en pdf con una introduccion del negocio utilizado, la informacion obtenida en  categorias y un mapa de la red semantica.
+  - `README.md`: Descripción de los documentos y su contenido.
+
+
 
 ## Uso
 
