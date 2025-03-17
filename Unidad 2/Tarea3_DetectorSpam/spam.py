@@ -3,17 +3,15 @@ import re
 
 class SpamDetector:
     def __init__(self):
-        # Palabras claves
         self.spam_keywords = [
             "free", "offer", "win", "prize", "click here", "urgent", "congratulations",
             "discount", "buy now", "subscribe", "money", "lottery", "limited time",
             "work from home", "earn $1000 per day", "exclusive deal", "make money fast",
             "get rich quick", "guaranteed weight loss", "verify your account", 
             "your account has been suspended", "click here to reset your password",
-            "urgent action required", "viagra", "cialis","meet singles"
+            "urgent action required", "viagra", "cialis","meet singles","invoice attached", "payment proof attached", "screenshot attached"
         ] 
         
-        # dominios sospechosos
         self.suspicious_domains = ["spam.com", "freeoffers.com", "easy-money.net", "cheapmeds.com", "click-me-now.net", "discounts.org",
         "lottery.net", "you-are-a-winner.com", "earn-money.org", "work-from-home.biz", "urgent-message.com", "verify-account.net", "reset-password-now.com", 
         "suspended-account.com", "weightlossguaranteed.com", "get-rich-quick.net", "meet-singles.net", "viagra-pills.net", "cialis-pills.net",".co",".xyz",".info",".club",".top",".site",
@@ -22,17 +20,14 @@ class SpamDetector:
         ".consulting",".business",".enterprises",".company",".management",".gg",".to",".cf",".gq",".cm",".tk","tm","ly","ga",".us"
         ]
 
-        # Acortadores de URL
         self.url_shorteners = ["bit.ly", "tinyurl.com", "goo.gl", "shorte.st","t.co", "ow.ly", "buff.ly", "rebrand.ly", "cli.gs", "tr.im", "is.gd", 
         "tiny.cc", "snipurl.com", "shorturl.at", "shorturl.co", "shorturl.to", "shorturl.link", "shorturl.pw", "shorturl.gg", "shorturl.us", "shorturl.icu", "shorturl.cf", 
         "shorturl.gq", "shorturl.ml", "shorturl.ga", "shorturl.tk", "shorturl.gq", "shorturl.cm"]
         
-        # Palabras clave de adjuntos
         self.attachment_keywords = [
         "attachment", "file attached", "download now", "see the attached file",
         "invoice attached", "payment proof attached", "screenshot attached"
         ]
-        # Extensiones de archivo sospechosas
         self.suspicious_extensions = [".zip", ".rar", ".exe", ".pdf", ".docx", ".xlsm", ".apk"]
 
         
@@ -117,11 +112,6 @@ class SpamDetector:
             score += 4
             reasons.append("Contiene extensiones de archivo sospechosas")
 
-        # Regla 15: Contiene frases como "screenshot attached" o "see the image below"
-        if "screenshot attached" in email or "see the image below" in email:
-            score += 2
-            reasons.append("Contiene frases como 'screenshot attached' o 'see the image below'")
-
         is_spam = score >= 5
         return is_spam, score, reasons
 
@@ -138,7 +128,7 @@ def analyze_csv(file_path):
         if is_spam:
             spam_count += 1
 
-    for result in results[100:120]:
+    for result in results[100:110]:
         print(result)
     
     spam_percentage = (spam_count / len(df)) * 100
