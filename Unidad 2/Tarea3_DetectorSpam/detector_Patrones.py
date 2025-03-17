@@ -36,7 +36,7 @@ class detector_Patrones:
                 })
         return results
 
-    def find_common_patterns_in_spam(self, csv_file_path):
+    def find_common_patterns(self, csv_file_path):
         pattern_counts = defaultdict(int)
         spam_emails = []
 
@@ -56,7 +56,7 @@ class detector_Patrones:
 if __name__ == "__main__":
     csv_file_path = 'c:\\Users\\Carlo\\Documents\\Repos\\Inteligencia-Artificial\\Unidad 2\\Tarea3_DetectorSpam\\spam_ham_dataset.csv'
     detector = detector_Patrones()
-    common_patterns = detector.find_common_patterns_in_spam(csv_file_path)
+    common_patterns = detector.find_common_patterns(csv_file_path)
     print("Patrones comunes en correos spam:")
     for pattern, count in common_patterns.items():
         print(f"Patrón: {pattern}, Frecuencia: {count}")
