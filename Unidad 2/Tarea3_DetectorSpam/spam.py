@@ -111,8 +111,9 @@ def analyze_csv(file_path):
     spam_percentage = (df['predicted_spam'].sum() / len(df)) * 100
 
     return spam_percentage
-
+    
 # Usage:
 csv_file = r"C:\Users\Carlo\Documents\Repos\Inteligencia-Artificial\Unidad 2\Tarea3_DetectorSpam\spam_ham_dataset.csv"  
 spam_detected = analyze_csv(csv_file)
 print(f"Porcentaje de correos detectados como spam: {spam_detected:.2f}%")
+
