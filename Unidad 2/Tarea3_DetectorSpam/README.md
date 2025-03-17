@@ -57,8 +57,10 @@ email = "Congratulations! You have won a prize. Click here to claim your reward:
 detector = detector_Patrones()
 patterns = detector.detect_patterns(email)
 print("Patrones detectados:", patterns)
+```
 
 ## Ejemplo de resultado
+
 ID.100 Spam=False | Score=3 | Reason: Contiene dominios sospechosos
 ID.101 Spam=True | Score=5 | Reason: Contiene dominios sospechosos, Longitud del mensaje
 ID.102 Spam=False | Score=3 | Reason: Contiene dominios sospechosos
@@ -66,38 +68,14 @@ ID.103 Spam=True | Score=5 | Reason: Palabras clave de spam, Contiene dominios s
 ID.104 Spam=False | Score=4 | Reason: Uso excesivo de caracteres especiales, Caracteres repetidos
 ID.105 Spam=False | Score=0 | Reason: None
 ID.106 Spam=False | Score=0 | Reason: None
-ID.100 Spam=False | Score=3 | Reason: Contiene dominios sospechosos
-ID.101 Spam=True | Score=5 | Reason: Contiene dominios sospechosos, Longitud del mensaje
-ID.102 Spam=False | Score=3 | Reason: Contiene dominios sospechosos
-ID.103 Spam=True | Score=5 | Reason: Palabras clave de spam, Contiene dominios sospechosos
-ID.104 Spam=False | Score=4 | Reason: Uso excesivo de caracteres especiales, Caracteres repetidos
-ID.105 Spam=False | Score=0 | Reason: None
-ID.106 Spam=False | Score=0 | Reason: None
 ID.107 Spam=False | Score=0 | Reason: None
 ID.108 Spam=False | Score=0 | Reason: None
 ID.109 Spam=False | Score=3 | Reason: Contiene dominios sospechosos
 ID.110 Spam=True | Score=5 | Reason: Palabras clave de spam, Contiene dominios sospechosos
-ID.103 Spam=True | Score=5 | Reason: Palabras clave de spam, Contiene dominios sospechosos
-ID.104 Spam=False | Score=4 | Reason: Uso excesivo de caracteres especiales, Caracteres repetidos
-ID.105 Spam=False | Score=0 | Reason: None
-ID.106 Spam=False | Score=0 | Reason: None
-ID.107 Spam=False | Score=0 | Reason: None
-ID.108 Spam=False | Score=0 | Reason: None
-ID.109 Spam=False | Score=3 | Reason: Contiene dominios sospechosos
-ID.110 Spam=True | Score=5 | Reason: Palabras clave de spam, Contiene dominios sospechosos
-ID.107 Spam=False | Score=0 | Reason: None
-ID.108 Spam=False | Score=0 | Reason: None
-ID.109 Spam=False | Score=3 | Reason: Contiene dominios sospechosos
-ID.110 Spam=True | Score=5 | Reason: Palabras clave de spam, Contiene dominios sospechosos
-ID.110 Spam=True | Score=5 | Reason: Palabras clave de spam, Contiene dominios sospechosos
-ongitud del mensaje
-ongitud del mensaje
-ID.113 Spam=False | Score=3 | Reason: Contiene dominios sospechosos
-ID.114 Spam=False | Score=0 | Reason: None
-ID.115 Spam=False | Score=3 | Reason: Contiene dominios sospechosos
-ID.116 Spam=True | Score=7 | Reason: Palabras clave de spam, Contiene dominios sospechosos, Longitud del mensaje
-ID.117 Spam=False | Score=0 | Reason: None
-ID.118 Spam=False | Score=0 | Reason: None
-ID.119 Spam=False | Score=0 | Reason: None
 
 Porcentaje de correos detectados como spam: 38.04%
+
+
+## Fuente de datos 
+https://www.kaggle.com/datasets/venky73/spam-mails-dataset/data
+
