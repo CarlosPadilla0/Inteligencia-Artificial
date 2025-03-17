@@ -61,17 +61,17 @@ print("Patrones detectados:", patterns)
 
 ## Ejemplo de resultado
 
-ID.100 Spam=False | Score=3 | Reason: Contiene dominios sospechosos
-ID.101 Spam=True | Score=5 | Reason: Contiene dominios sospechosos, Longitud del mensaje
-ID.102 Spam=False | Score=3 | Reason: Contiene dominios sospechosos
-ID.103 Spam=True | Score=5 | Reason: Palabras clave de spam, Contiene dominios sospechosos
-ID.104 Spam=False | Score=4 | Reason: Uso excesivo de caracteres especiales, Caracteres repetidos
-ID.105 Spam=False | Score=0 | Reason: None
-ID.106 Spam=False | Score=0 | Reason: None
-ID.107 Spam=False | Score=0 | Reason: None
-ID.108 Spam=False | Score=0 | Reason: None
-ID.109 Spam=False | Score=3 | Reason: Contiene dominios sospechosos
-ID.110 Spam=True | Score=5 | Reason: Palabras clave de spam, Contiene dominios sospechosos
+- ID.100 Spam=False | Score=3 | Reason: Contiene dominios sospechosos
+- ID.101 Spam=True | Score=5 | Reason: Contiene dominios sospechosos, Longitud del mensaje
+- ID.102 Spam=False | Score=3 | Reason: Contiene dominios sospechosos
+- ID.103 Spam=True | Score=5 | Reason: Palabras clave de spam, Contiene dominios sospechosos
+- ID.104 Spam=False | Score=4 | Reason: Uso excesivo de caracteres especiales, Caracteres repetidos
+- ID.105 Spam=False | Score=0 | Reason: None
+- ID.106 Spam=False | Score=0 | Reason: None
+- ID.107 Spam=False | Score=0 | Reason: None
+- ID.108 Spam=False | Score=0 | Reason: None
+- ID.109 Spam=False | Score=3 | Reason: Contiene dominios sospechosos
+- ID.110 Spam=True | Score=5 | Reason: Palabras clave de spam, Contiene dominios sospechosos
 
 Porcentaje de correos detectados como spam: 38.04%
 
