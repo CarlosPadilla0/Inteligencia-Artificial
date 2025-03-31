@@ -45,6 +45,13 @@ Esta clase utiliza reglas específicas para evaluar si un correo electrónico es
 - Contiene extensiones de archivo sospechosas
 - Contiene frases como "screenshot attached" o "see the image below"
 
+### Modelo Naive Bayes (`bayes.py`)
+
+Este archivo implementa un modelo de clasificación Naive Bayes para detectar correos spam. Utiliza las siguientes técnicas:
+
+- **Preprocesamiento de texto**: Limpieza y normalización del texto.
+- **Vectorización TF-IDF**: Representación de texto en forma de vectores numéricos.
+- **Entrenamiento y evaluación**: Entrena un modelo Naive Bayes con un conjunto de datos etiquetado y evalúa su precisión.
 
 ## Ejemplo de Uso
 

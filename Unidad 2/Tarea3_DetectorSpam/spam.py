@@ -112,7 +112,7 @@ class SpamDetector:
             score += 4
             reasons.append("Contiene extensiones de archivo sospechosas")
 
-        is_spam = score >= 5
+        is_spam = score >= 4
         return is_spam, score, reasons
 
 def analyze_csv(file_path):
