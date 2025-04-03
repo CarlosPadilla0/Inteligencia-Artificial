@@ -74,18 +74,20 @@ class detector_Patrones:
         return word_counts
 
 if __name__ == "__main__":
-    csv_file_path = 'spam_ham_dataset.csv'  #########
+    #ruta del spam.csv
+    csv_file_path = r"C:\Users\Carlo\Documents\Repos\Inteligencia-Artificial\Unidad 2\Tarea3_DetectorSpam\spam_ham_dataset.csv"  
+
     detector = detector_Patrones()
 
     # Contar palabras en spam
     spam_word_counts = detector.count_all_words_in_csv(csv_file_path, label_filter='spam', min_length=2)
-    print("\n 20 palabras más comunes en spam:")
-    for word, count in spam_word_counts.most_common(20):
+    print("\n 100 palabras más comunes en spam:")
+    for word, count in spam_word_counts.most_common(200):
         print(f"{word}: {count}")
 
     # Comparar spam vs ham
     ham_word_counts = detector.count_all_words_in_csv(csv_file_path, label_filter='ham', min_length=2)
-    print("\n 10 palabras únicas en spam (no en ham):")
+    print("\n 100 palabras únicas en spam (no en ham):")
     spam_unique_words = set(spam_word_counts) - set(ham_word_counts)
-    for word in list(spam_unique_words)[:10]:
+    for word in list(spam_unique_words)[:100]:
         print(f"{word}: {spam_word_counts[word]}")

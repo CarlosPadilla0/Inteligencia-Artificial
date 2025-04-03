@@ -9,7 +9,8 @@ class SpamDetector:
             "work from home", "earn $1000 per day", "exclusive deal", "make money fast",
             "get rich quick", "guaranteed weight loss", "verify your account", 
             "your account has been suspended", "click here to reset your password",
-            "urgent action required", "viagra", "cialis","meet singles","invoice attached", "payment proof attached", "screenshot attached"
+            "urgent action required", "viagra", "cialis","meet singles","invoice attached", "payment proof attached", "screenshot attached","investment","adult content","src","pornographic","attachment","file attached",
+            "download now", "see the attached file","invoice attached", "payment proof attached", "screenshot attached","attachment","file attached",
         ] 
         
         self.suspicious_domains = ["spam.com", "freeoffers.com", "easy-money.net", "cheapmeds.com", "click-me-now.net", "discounts.org",
@@ -134,6 +135,34 @@ def analyze_csv(file_path):
     spam_percentage = (spam_count / len(df)) * 100
     print(f"\nPorcentaje de correos detectados como spam: {spam_percentage:.2f}%")
 
-csv_file = r"C:\Users\Carlo\Documents\Repos\Inteligencia-Artificial\Unidad 2\Tarea3_DetectorSpam\spam_ham_dataset.csv"  
-analyze_csv(csv_file)
+def analyze_email():
+    email = input("Ingrese el texto del correo a analizar: ")
+    detector = SpamDetector()
+    is_spam, score, reasons = detector.is_spam(email)
+    print(f"\nResultado del análisis:")
+    print(f"Spam: {'Sí' if is_spam else 'No'}")
+    print(f"Puntuación: {score}")
+    print(f"Razones: {', '.join(reasons) if reasons else 'Ninguna'}")
+
+def main():
+    while True:
+        print("\n--- Menú ---")
+        print("1. Analizar archivo CSV")
+        print("2. Analizar correo ingresado manualmente")
+        print("3. Salir")
+        choice = input("Seleccione una opción: ")
+
+        if choice == "1":
+            csv_file = r"C:\Users\Carlo\Documents\Repos\Inteligencia-Artificial\Unidad 2\Tarea3_DetectorSpam\spam_ham_dataset.csv"  
+            analyze_csv(csv_file)
+        elif choice == "2":
+            analyze_email()
+        elif choice == "3":
+            print("Saliendo del programa...")
+            break
+        else:
+            print("Opción no válida. Intente de nuevo.")
+
+if __name__ == "__main__":
+    main()
 
