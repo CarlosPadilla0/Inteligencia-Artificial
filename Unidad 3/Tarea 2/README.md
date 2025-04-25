@@ -6,7 +6,14 @@ Esta carpeta contiene el documento en el que nos basaremos para la creación del
 
 ## Contenido 
 
--`Reglas_Sistema_Experto_.pdf` : explica las reglas que usaremos divididas por areas, incluyendo las fuentes de informacion 
+-`Reglas_Sistema_Experto_.pdf` : Este archivo contiene las 14 reglas lógicas que definen el sistema experto de diagnóstico electrónico. Estructurado en dos páginas, detalla el flujo de diagnóstico para componentes como capacitores, transistores, microcontroladores, diodos, resistores e inductores.
+
+-`mapeoSE.png` : Representación visual basado en las 14 reglas previamente detalladas. Desde la identificación del componente hasta el resultado final. 
+
+    Leyenda:
+      - ◇  Rombo: Pregunta condicional (ejemplo: "¿Tiene continuidad?").  
+      - ▷  Rectángulo: Acción o diagnóstico (ejemplo: "Dañado").  
+      - -> Flechas: Flujo de decisiones.  
 
 ## Autor 
 
