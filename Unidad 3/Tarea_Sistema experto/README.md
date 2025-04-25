@@ -40,11 +40,11 @@ El sistema utiliza reglas CLIPS para diagnosticar fallas. Algunas de las reglas 
 
 ## Requisitos
 
-- **CLIPS:** Este sistema está implementado en el lenguaje CLIPS, por lo que es necesario tener instalado el entorno de ejecución de CLIPS para ejecutarlo.
+- **Prolog:** Este sistema está implementado en el lenguaje Prolog, por lo que es necesario tener instalado el entorno de ejecución de Prolog para ejecutarlo.
 
 ## Uso
 
-1. Ejecuta el archivo `sistema_experto_electronica.clp` en el entorno de CLIPS.
+1. Ejecuta el archivo `sistema_experto_electronica.cl` en el entorno de Prolog.
 2. Responde las preguntas que el sistema te hará sobre el componente que deseas diagnosticar.
 3. Revisa el diagnóstico final proporcionado por el sistema.
 
