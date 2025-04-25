@@ -6,7 +6,7 @@ Esta carpeta contiene el documento en el que nos basaremos para la creación del
 
 ## Contenido 
 
--`ReglasSistemaExperto.pdf` : explica las reglas que usaremos divididas por areas, incluyendo las fuentes de informacion 
+-`Reglas_Sistema_Experto_.pdf` : explica las reglas que usaremos divididas por areas, incluyendo las fuentes de informacion 
 
 ## Autor 
 
