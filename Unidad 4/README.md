@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este proyecto implementa un sistema de inteligencia artificial capaz de reconocer rostros humanos a partir de imágenes. Utiliza técnicas de visión por computadora y aprendizaje automático para identificar y verificar la identidad de personas en un conjunto de datos proporcionado.
+Este proyecto implementa un sistema de inteligencia artificial capaz de reconocer emociones humanas a partir de imágenes de rostros. Utiliza técnicas de visión por computadora y aprendizaje automático para identificar expresiones faciales y clasificarlas en diferentes emociones (por ejemplo: felicidad, tristeza, enojo, sorpresa, etc.).
 
 ## Características
 
