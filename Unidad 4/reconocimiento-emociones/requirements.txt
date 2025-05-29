@@ -6,3 +6,6 @@ pandas
 scikit-learn
 opencv-python
 seaborn
+opencv-python-headless
+opencv-contrib-python
+opencv-python

@@ -4,18 +4,28 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.models import load_model, Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 
 # Directorios de datos
-ruta_entrenamiento = 'data/train'
-ruta_validacion = 'data/valid'
-ruta_prueba = 'data/test'
+ruta_entrenamiento = '../data/train'
+ruta_validacion = '../data/valid'
+ruta_prueba = '../data/test'
 
 ancho_img, alto_img = 150, 150
-lote = 32
-epocas = 50
+lote = 64  
+epocas = 100 
 
-# Generadores de datos
-entrenamiento_datagen = ImageDataGenerator(rescale=1.0/255)
+# Generadores de datos con data augmentation para entrenamiento
+entrenamiento_datagen = ImageDataGenerator(
+    rescale=1.0/255,
+    rotation_range=20,
+    width_shift_range=0.2,
+    height_shift_range=0.2,
+    shear_range=0.15,
+    zoom_range=0.2,
+    horizontal_flip=True,
+    fill_mode='nearest'
+)
 validacion_datagen = ImageDataGenerator(rescale=1.0/255)
 
 entrenamiento_generador = entrenamiento_datagen.flow_from_directory(
@@ -56,12 +66,23 @@ modelo.compile(loss='categorical_crossentropy',
                optimizer='adam',
                metrics=['accuracy'])
 
+# Early stopping y checkpoint para evitar sobreajuste
+callbacks = [
+    EarlyStopping(monitor='val_loss', patience=8, restore_best_weights=True),
+    ModelCheckpoint('src/model.h5', save_best_only=True)
+]
+
+# Calcular steps_per_epoch y validation_steps correctamente
+steps_per_epoch = int(np.ceil(entrenamiento_generador.samples / lote))
+validation_steps = int(np.ceil(validacion_generador.samples / lote))
+
 historial = modelo.fit(
     entrenamiento_generador,
-    steps_per_epoch=entrenamiento_generador.samples // lote,
+    steps_per_epoch=steps_per_epoch,
     validation_data=validacion_generador,
-    validation_steps=validacion_generador.samples // lote,
-    epochs=epocas
+    validation_steps=validation_steps,
+    epochs=epocas,
+    callbacks=callbacks
 )
 
 # Mostrar el porcentaje de exactitud final de entrenamiento y validación
@@ -70,4 +91,5 @@ exactitud_validacion = historial.history['val_accuracy'][-1]
 print(f'Porcentaje de exactitud final en entrenamiento: {exactitud_entrenamiento*100:.2f}%')
 print(f'Porcentaje de exactitud final en validación: {exactitud_validacion*100:.2f}%')
 
-modelo.save('src/model.h5')
+# Guardar el modelo en formato Keras moderno y también en HDF5 por compatibilidad
+modelo.save('src/model.keras')
