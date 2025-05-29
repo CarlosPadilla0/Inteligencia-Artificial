@@ -30,10 +30,7 @@ reconocimiento-emociones
 │       ├── happy
 │       ├── sad
 │       └── surprise
-├── notebooks
-│   └── procesamiento.ipynb
 ├── src
-│   ├── data_preprocessing.py
 │   ├── model.py
 │   ├── train.py
 │   └── evaluate.py
