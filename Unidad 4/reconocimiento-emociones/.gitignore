@@ -1,0 +1,24 @@
+# Ignorar entornos virtuales de Python
+.venv/
+venv/
+ENV/
+
+# Ignorar archivos de caché de Python
+__pycache__/
+*.py[cod]
+
+# Ignorar archivos de configuración y datos temporales
+*.log
+*.tmp
+*.swp
+
+# Ignorar archivos de modelos y datos grandes
+*.h5
+*.ckpt
+
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de test y datasets grandes (opcional)
+data/
