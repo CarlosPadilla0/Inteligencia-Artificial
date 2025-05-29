@@ -45,6 +45,33 @@ Este repositorio contiene tareas y proyectos relacionados con la inteligencia ar
   - `Red semantica(visual).pdf`: Documento en pdf con una introduccion del negocio utilizado, la informacion obtenida en  categorias y un mapa de la red semantica.
   - `README.md`: Descripción de los documentos y su contenido.
 
+- `Unidad 3/Tarea 1/`: Documentos y material sobre sistemas expertos.
+  - `Sistema_Experto.pdf`: Documento explicativo sobre sistemas expertos.
+  - `README.md`: Descripción y guía de uso.
+
+- `Unidad 3/Tarea 2/`: Material sobre reglas y mapeo de sistemas expertos.
+  - `Reglas_Sistema_Experto_.pdf`: Documento PDF con reglas.
+  - `mapeoSE.png`: Imagen de mapeo del sistema experto.
+  - `README.md`: Descripción y guía de uso.
+
+- `Unidad 3/Tarea 3/`: Documento adicional sobre reglas de sistemas expertos.
+  - `ReglasSE.pdf`: Documento PDF.
+
+- `Unidad 3/Tarea_Sistema experto/`: Implementación práctica de un sistema experto en electrónica.
+  - `sistema_experto_electronica.clp`: Código CLIPS del sistema experto.
+  - `Sistema_experto_electronica.pl`: Código Prolog del sistema experto.
+  - `README.md`: Descripción y guía de uso.
+
+## Recursos adicionales y proyectos destacados
+
+- `Unidad 4/reconocimiento-emociones/`: Proyecto completo de reconocimiento de emociones faciales usando aprendizaje profundo. Incluye código fuente, instrucciones, dependencias y dataset de ejemplo. Consulta el README específico de esa carpeta para más detalles sobre instalación y uso.
+- `Unidad 4/Data Set.txt` y `Unidad 4/DATASET_INFO.md`: Información y explicación sobre el dataset utilizado para el reconocimiento de emociones.
+
+## Recomendaciones de uso
+
+- Para cada tarea o proyecto, revisa el archivo `README.md` correspondiente dentro de la carpeta específica. Allí encontrarás instrucciones detalladas de ejecución, dependencias y ejemplos.
+- Si el proyecto requiere un entorno virtual, sigue las instrucciones de instalación de dependencias antes de ejecutar cualquier script.
+- Los documentos PDF, DOCX y PPTX incluidos sirven como material de apoyo teórico y práctico.
 
 
 ## Uso
