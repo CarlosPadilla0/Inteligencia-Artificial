@@ -31,7 +31,6 @@ reconocimiento-emociones
 │       ├── sad
 │       └── surprise
 ├── src
-│   ├── data_preprocessing.py
 │   ├── model.py
 │   ├── train.py
 │   └── evaluate.py
