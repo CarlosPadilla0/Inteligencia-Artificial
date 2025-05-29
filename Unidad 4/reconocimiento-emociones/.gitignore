@@ -12,9 +12,6 @@ __pycache__/
 *.tmp
 *.swp
 
-# Ignorar archivos de modelos y datos grandes
-*.h5
-*.ckpt
 
 # Ignorar archivos de sistema
 .DS_Store
