@@ -43,8 +43,6 @@ reconocimiento-emociones
 - **data/train/**: Contiene las imágenes de entrenamiento organizadas por emociones: `angry`, `disgust`, `fear`, `happy`, `sad`, y `surprise`.
 - **data/test/**: Contiene las imágenes de prueba organizadas por emociones.
 - **data/valid/**: Contiene las imágenes de validación organizadas por emociones.
-- **notebooks/procesamiento.ipynb**: Cuaderno de Jupyter para análisis exploratorios de datos y visualización.
-- **src/data_preprocessing.py**: Funciones para cargar y preprocesar imágenes.
 - **src/model.py**: Define la arquitectura del modelo de machine learning.
 - **src/train.py**: Código para entrenar el modelo.
 - **src/evaluate.py**: Evalúa el rendimiento del modelo.
@@ -54,8 +52,7 @@ reconocimiento-emociones
 
 1. Clona este repositorio en tu máquina local.
 2. Instala las dependencias listadas en `requirements.txt`.
-3. Ejecuta el cuaderno `procesamiento.ipynb` para comenzar con el análisis de datos y el entrenamiento del modelo.
-
+3. 
 ## Cómo ejecutar este proyecto en tu máquina
 
 1. **Crea un entorno virtual de Python:**
