@@ -17,7 +17,6 @@ Este proyecto implementa un sistema de inteligencia artificial capaz de reconoce
 - `reconocimiento-emociones/`: Carpeta principal del sistema de reconocimiento de emociones.
   - `data/`: Contiene las imágenes organizadas en carpetas `train/`, `test/` y `valid/`, cada una con subcarpetas por emoción (`angry`, `disgust`, `fear`, `happy`, `sad`, `surprise`).
   - `src/`: Código fuente del sistema.
-    - `data_preprocessing.py`: Funciones para cargar y preprocesar imágenes.
     - `model.py`: Define la arquitectura del modelo de machine learning.
     - `train.py`: Entrenamiento del modelo.
     - `evaluate.py`: Evaluación del modelo.
