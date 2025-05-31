@@ -1,12 +1,28 @@
 import cv2
 import numpy as np
 from tensorflow.keras.models import load_model
+import os
 
-model = load_model('C:\\Users\\Carlo\\Documents\\Repos\\Inteligencia-Artificial\\Unidad 4\\reconocimiento-emociones\\src\\model.h5')
+# Obtener la ruta absoluta del script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+model_path_keras = os.path.join(script_dir, 'model.keras')
+model_path_h5 = os.path.join(script_dir, 'model.h5')
+
+# Intentar cargar el modelo en formato .keras primero, luego .h5
+if os.path.exists(model_path_keras):
+    model = load_model(model_path_keras)
+    print(f'Modelo cargado desde: {model_path_keras}')
+elif os.path.exists(model_path_h5):
+    model = load_model(model_path_h5)
+    print(f'Modelo cargado desde: {model_path_h5}')
+else:
+    print('No se encontró ningún archivo de modelo (.keras o .h5) en el directorio del script.')
+    input('Presiona Enter para salir...')
+    exit()
 
 class_names = ['angry', 'disgust', 'fear', 'happy', 'sad', 'surprise']
 
-IMG_SIZE = (150, 150)
+IMG_SIZE = (224, 224)
 
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
@@ -25,7 +41,13 @@ while True:
         print('No se pudo leer el frame de la cámara.')
         break
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+    # Ajuste de parámetros para una detección más estable
+    faces = face_cascade.detectMultiScale(
+        gray,
+        scaleFactor=1.1,   # Más robusto
+        minNeighbors=6,    # Más estricto
+        minSize=(60, 60)   # Evita caras muy pequeñas
+    )
     print(f'Rostros detectados: {len(faces)}')
     if len(faces) == 0:
         cv2.putText(frame, 'No se detectaron rostros', (20, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0,0,255), 2)
